@@ -102,11 +102,13 @@
         }
 
         .header-title {
-            font-size: 1.6rem;
-            font-weight: 700;
-            z-index: 2;
-            letter-spacing: 0.5px;
-        }
+           font-size: 1.6rem;
+           font-weight: 700;
+           z-index: 2;
+           letter-spacing: 0.5px;
+           position: relative; /* top কাজ করার জন্য relative দিতে হবে */
+           top: -10px;         /* নেতিবাচক মান → উপরে, ধনাত্মক মান → নিচে */
+}
 
         .theme-toggle {
             position: absolute;
